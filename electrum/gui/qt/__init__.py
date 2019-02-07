@@ -50,9 +50,6 @@ from electrum.util import (UserCancelled, PrintError, profiler,
 from electrum.wallet import Wallet, Abstract_Wallet
 
 from .installwizard import InstallWizard, WalletAlreadyOpenInMemory
-
-from electrum.lightning import LightningUI
-
 from .util import get_default_language, read_QIcon, ColorScheme
 from .main_window import ElectrumWindow
 from .network_dialog import NetworkDialog
