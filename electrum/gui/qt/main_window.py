@@ -408,7 +408,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         elif event == 'ln_message':
             lnworker, message, htlc_id = args
             if lnworker == self.wallet.lnworker:
-                self.show_message(message)
+                self.notify(message)
         else:
             self.print_error("unexpected network_qt signal:", event, args)
 
